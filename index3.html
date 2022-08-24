@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <h1>คำนวน VAT 7เปอร์เซนต์</h1>
+        <h1 id="answer"> </h1>
+        ราคาสุทธิ <input type="text" id="num1">
+        <br>
+        <br>
+        <button onclick="Calculate()">Calculate</button>
+
+<script>
+    function Calculate()
+    {
+        var field1=document.getElementById("num1").value;
+
+        var result=parseFloat(field1)*100/107;
+
+        if(!isNaN(result))
+
+        {
+            document.getElementById("answer").innerHTML="ราคาก่อนรวมVAT "+result;
+        }
+    }
+</script>
+
+
+
+
+    </body>
+</html>
