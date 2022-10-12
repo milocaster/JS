@@ -6,8 +6,8 @@ function multiplicationTable() {
     let number = Number(numberInput.value);
     let outputHtml = '';
 
-    if (number ===0) {
-        output.innerHTML =' 0 คูณอะไรก็ได้ 0 จ้า'
+    if (number === 0) {
+        output.innerHTML = ' 0 คูณอะไรก็ได้ 0 จ้า'
         return;
     }
 
@@ -16,7 +16,7 @@ function multiplicationTable() {
         outputHtml += number + ' x ' + i + ' = ' + (number * i);
         outputHtml += '</p>';
     }
-    
+
     output.innerHTML = outputHtml;
 }
 
